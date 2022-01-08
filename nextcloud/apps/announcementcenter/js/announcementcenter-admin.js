@@ -1,0 +1,3 @@
+/*! For license information please see announcementcenter-admin.js.LICENSE.txt */
+$(document).ready((function(){var n=$("#announcementcenter"),e=n.find(".admin_groups");OC.Settings.setupGroupsSelect(e),e.change((function(n){var e=n.val||["admin"];e=JSON.stringify(e),OCP.AppConfig.setValue("announcementcenter","admin_groups",e)})),n.find(".checkbox").change((function(){OCP.AppConfig.setValue("announcementcenter",$(this).attr("name"),this.checked?"yes":"no")}))}));
+//# sourceMappingURL=announcementcenter-admin.js.map?v=77bd9e8c51d39f3e6e19

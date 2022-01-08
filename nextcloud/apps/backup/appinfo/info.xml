@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<info xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	  xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
+	<id>backup</id>
+	<name>Backup</name>
+	<summary>Backup now. Restore later.</summary>
+	<description>
+		<![CDATA[
+		 The Backup App creates and stores backup images of your Nextcloud:
+
+- Backup the instance, its apps, your data and your database,
+- Administrator can configure the time slots for automated backup,
+- Full and Partial backup, with different frequencies,
+- 2-pass to limit downtime (maintenance mode) of your instance,
+- Compression and encryption,
+- Upload your encrypted backup on an external filesystem,
+- Download and search for your data,
+- Restore single file or the entire instance.
+]]>
+	</description>
+	<version>1.0.4</version>
+	<licence>agpl</licence>
+	<author mail="maxence@artificial-owl.com">Maxence Lange</author>
+	<namespace>Backup</namespace>
+	<category>tools</category>
+	<website>https://github.com/nextcloud/backup</website>
+	<bugs>https://github.com/nextcloud/backup/issues</bugs>
+	<repository type="git">https://github.com/nextcloud/backup.git</repository>
+	<screenshot>https://raw.githubusercontent.com/nextcloud/backup/master/screenshots/app.png</screenshot>
+	<dependencies>
+		<nextcloud min-version="23" max-version="24"/>
+	</dependencies>
+
+	<background-jobs>
+		<job>OCA\Backup\Cron\Backup</job>
+		<job>OCA\Backup\Cron\Event</job>
+		<job>OCA\Backup\Cron\Manage</job>
+	</background-jobs>
+
+	<commands>
+		<command>OCA\Backup\Command\RemoteAdd</command>
+		<command>OCA\Backup\Command\RemoteList</command>
+		<command>OCA\Backup\Command\RemoteRemove</command>
+
+		<command>OCA\Backup\Command\ExternalAdd</command>
+		<command>OCA\Backup\Command\ExternalAppData</command>
+		<command>OCA\Backup\Command\ExternalList</command>
+		<command>OCA\Backup\Command\ExternalRemove</command>
+
+		<command>OCA\Backup\Command\PointArchive</command>
+		<command>OCA\Backup\Command\PointComment</command>
+		<command>OCA\Backup\Command\PointCreate</command>
+		<command>OCA\Backup\Command\PointDelete</command>
+		<command>OCA\Backup\Command\PointDetails</command>
+		<command>OCA\Backup\Command\PointDownload</command>
+		<command>OCA\Backup\Command\PointHistory</command>
+		<command>OCA\Backup\Command\PointList</command>
+		<command>OCA\Backup\Command\PointPack</command>
+		<command>OCA\Backup\Command\PointPurge</command>
+		<command>OCA\Backup\Command\PointRestore</command>
+		<command>OCA\Backup\Command\PointScan</command>
+		<command>OCA\Backup\Command\PointUnarchive</command>
+		<command>OCA\Backup\Command\PointUnlock</command>
+		<command>OCA\Backup\Command\PointUnpack</command>
+		<command>OCA\Backup\Command\PointUpload</command>
+
+		<command>OCA\Backup\Command\FileHistory</command>
+		<command>OCA\Backup\Command\FileSearch</command>
+
+		<command>OCA\Backup\Command\SetupExport</command>
+		<command>OCA\Backup\Command\SetupImport</command>
+
+		<command>OCA\Backup\Command\Reset</command>
+	</commands>
+
+	<settings>
+		<admin>OCA\Backup\Settings\Admin</admin>
+		<admin-section>OCA\Backup\Settings\AdminSection</admin-section>
+	</settings>
+
+	<activity>
+		<settings>
+			<setting>OCA\Backup\Activity\GlobalSetting</setting>
+		</settings>
+		<filters>
+			<filter>OCA\Backup\Activity\Filter</filter>
+		</filters>
+		<providers>
+			<provider>OCA\Backup\Activity\Provider</provider>
+		</providers>
+	</activity>
+
+</info>

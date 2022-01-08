@@ -1,0 +1,26 @@
+OC.L10N.register(
+    "backup",
+    {
+    "Scan Backup Folder" : "バックアップフォルダーをスキャンする",
+    "Backup" : "バックアップ",
+    "Update on all Backup's event" : "全てのバックアップイベントを更新する",
+    "complete" : "完了する",
+    "partial" : "一部",
+    "seconds" : "秒",
+    "minutes" : "分",
+    "hours" : "時間",
+    "days" : "日",
+    "Error" : "エラー",
+    "Local storage" : "ローカルストレージ",
+    "External storage" : "外部ストレージ",
+    "Delete" : "削除",
+    "Backup schedule" : "バックアップスケジュール",
+    "Cancel" : "キャンセル",
+    "Settings saved" : "設定を保存しました",
+    "Encrypted" : "暗号化済み",
+    "Compressed" : "圧縮",
+    "Status" : "ステータス",
+    "Local" : "ローカル",
+    "local" : "ローカル"
+},
+"nplurals=1; plural=0;");

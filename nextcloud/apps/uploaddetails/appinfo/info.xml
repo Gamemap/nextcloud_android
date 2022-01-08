@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<info xmlns:xsi= "http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
+    <id>uploaddetails</id>
+    <name>Upload Details</name>
+    <summary>Shows Upload Details (percent complete, current speed, ...) in Upload Progress Bar</summary>
+    <description>**[DEPRECATED: I worked with the Nextcloud-Team to bring this functionality into Core. As of Nextcloud 18 this app is no longer necessary. Simply hover over the Progressbar to show advanced details. Thanks to the Nextcloud-Team for helping me out.]** By default, the Nextcloud upload progress bar only shows an estimated time to completion. This App adds useful information like the current upload speed, completion in percent and uploaded/total file size.</description>
+    <version>0.1.3</version>
+    <licence>agpl</licence>
+    <author mail="hburger30@gmail.com">Hannes Burger</author>
+    <namespace>UploadDetails</namespace>
+    <category>tools</category>
+    <website>https://github.com/burgha/nextcloud_uploaddetails</website>
+    <bugs>https://github.com/burgha/nextcloud_uploaddetails</bugs>
+    <screenshot>https://raw.githubusercontent.com/burgha/nextcloud_uploaddetails/master/screenshot.png</screenshot>
+    <dependencies>
+        <nextcloud min-version="16" max-version="17"/>
+    </dependencies>
+</info>

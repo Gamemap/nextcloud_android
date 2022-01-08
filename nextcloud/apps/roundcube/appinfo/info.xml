@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<info>
+	<id>roundcube</id>
+	<namespace>RoundCube</namespace>
+	<name>RoundCube Mail</name>
+	<licence>AGPL</licence>
+	<author>Martin Reinhardt; Leonardo R. Morelli; Ruslan Bor, Igor Torrente</author>
+	<version>22.0.0</version>
+	<dependencies>
+		<nextcloud min-version="20" max-version="22.0" />
+	</dependencies>
+	<settings>
+		<admin>OCA\RoundCube\Settings\AdminSettings</admin>
+		<admin-section>OCA\RoundCube\Settings\AdminSection</admin-section>
+	</settings>
+	<description>
+		Integrates existing roundcube into NextCloud.
+	</description>
+	<website>https://github.com/flionet89/Nextcloud-roundcube</website>
+</info>

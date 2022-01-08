@@ -1,0 +1,121 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the ownCloud roundcube package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Nextcloud roundcube 10.0.0\n"
+"Report-Msgid-Bugs-To: translations@owncloud.org\n"
+"POT-Creation-Date: 2020-03-28 13:27-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: appinfo/app.php:39
+msgid "Webmail"
+msgstr ""
+
+#: lib/Controller/SettingsController.php:60
+msgid "Not submitted for us."
+msgstr ""
+
+#: lib/Controller/SettingsController.php:74
+msgid "Default RC installation path can't be an empty string."
+msgstr ""
+
+#: lib/Controller/SettingsController.php:76
+msgid "Default path must be a url relative to this server."
+msgstr ""
+
+#: lib/Controller/SettingsController.php:82
+msgid "A domain is not valid."
+msgstr ""
+
+#: lib/Controller/SettingsController.php:90
+msgid "A path is not valid."
+msgstr ""
+
+#: lib/Controller/SettingsController.php:95
+msgid "Paths must be urls relative to this server."
+msgstr ""
+
+#: lib/Controller/SettingsController.php:102
+msgid "Unpaired domains and paths."
+msgstr ""
+
+#: lib/Controller/SettingsController.php:108
+msgid "Some inputs are not valid."
+msgstr ""
+
+#: lib/Controller/SettingsController.php:131
+msgid "Application settings successfully stored."
+msgstr ""
+
+#: templates/part.error.login.php:25
+msgid ""
+"There are login errors, please relogin to Nextcloud "
+"Relogin to Nextcloud."
+msgstr ""
+
+#: templates/part.error.noemail.php:23
+#, php-format
+msgid "Username '%s' is not a valid email address, neither the user email."
+msgstr ""
+
+#: templates/tpl.adminSettings.php:35
+msgid "Default RC installation path"
+msgstr ""
+
+#: templates/tpl.adminSettings.php:40
+#, php-format
+msgid "Default path relative to Nextcloud server (%s)."
+msgstr ""
+
+#: templates/tpl.adminSettings.php:43
+msgid "Per email domain RC installations"
+msgstr ""
+
+#: templates/tpl.adminSettings.php:44
+msgid ""
+"Enter your users' email domains and their corresponding paths if you have "
+"different RoundCube installations. For example: 'domain1.com':'roundcube1/', "
+"'domain2.com':'roundcube2/'. Path relative to Nextcloud server."
+msgstr ""
+
+#: templates/tpl.adminSettings.php:51 templates/tpl.adminSettings.php:67
+msgid "Remove"
+msgstr ""
+
+#: templates/tpl.adminSettings.php:78
+msgid "Add"
+msgstr ""
+
+#: templates/tpl.adminSettings.php:85
+msgid "Advanced settings"
+msgstr ""
+
+#: templates/tpl.adminSettings.php:89
+msgid "Show RoundCube top information bar (shows logout button)."
+msgstr ""
+
+#: templates/tpl.adminSettings.php:93
+msgid "Disable when debugging with self-signed certificates."
+msgstr ""
+
+#: templates/tpl.adminSettings.php:96
+msgid "Enable SSL verification."
+msgstr ""
+
+#: templates/tpl.adminSettings.php:100
+msgid "Save"
+msgstr ""
+
+#: templates/tpl.adminSettings.php:101
+msgid "Saving..."
+msgstr ""

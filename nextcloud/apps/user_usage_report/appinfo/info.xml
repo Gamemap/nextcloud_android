@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<info xmlns:xsi= "http://www.w3.org/2001/XMLSchema-instance"
+	  xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
+	<id>user_usage_report</id>
+	<name>User usage report</name>
+	<summary>Provides a command which generates a report about all the users and their usage</summary>
+	<description><![CDATA[Provides a command which generates a report about all the users and their usage:
+
+```
+$ sudo -u www-data ./occ usage-report:generate admin
+"admin","2017-09-18T09:00:01+00:00",5368709120,786432000,12,1,1,2
+```
+]]></description>
+
+	<version>1.7.0</version>
+	<licence>agpl</licence>
+	<author>Joas Schilling</author>
+
+	<namespace>UserUsageReport</namespace>
+
+	<types>
+		<filesystem/>
+	</types>
+
+	<category>monitoring</category>
+
+	<website>https://github.com/nextcloud/user_usage_report</website>
+	<bugs>https://github.com/nextcloud/user_usage_report/issues</bugs>
+	<repository>https://github.com/nextcloud/user_usage_report.git</repository>
+
+	<screenshot>https://raw.githubusercontent.com/nextcloud/user_usage_report/master/docs/screenshot.png</screenshot>
+
+	<dependencies>
+		<nextcloud min-version="23" max-version="23" />
+	</dependencies>
+
+	<commands>
+		<command>OCA\UserUsageReport\Command\Generate</command>
+	</commands>
+</info>

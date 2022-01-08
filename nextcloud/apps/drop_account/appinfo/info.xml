@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<info>
+	<id>drop_account</id>
+	<name lang="en">User account deletion</name>
+	<name lang="fr">Supprimer son compte</name>
+	<summary lang="en">An app to allow users to delete their accounts.</summary>
+	<summary lang="fr">Une application permettant aux utilisateurs de supprimer leur compte.</summary>
+	<description lang="en">
+		<![CDATA[
+# Description
+
+This app allows users to delete their accounts by removing all their data.
+
+It can also send activities to the admins about deleted accounts.
+	]]>
+	</description>
+	<description lang="fr">
+		<![CDATA[
+# Description
+
+Cette application permet aux utilisateurs de supprimer leurs comptes et toutes leurs données personnelles.
+
+Elle peut également envoyer des activités aux administrateurs à propos des comptes supprimés.
+	]]>
+	</description>
+	<version>2.0.0</version>
+	<licence>agpl</licence>
+	<author mail="nextcloud@tcit.fr" homepage="https://tcit.fr">Thomas Citharel</author>
+	<namespace>DropAccount</namespace>
+	<category>tools</category>
+	<website>https://framagit.org/framasoft/nextcloud/drop_account</website>
+	<bugs>https://framagit.org/framasoft/nextcloud/drop_account/issues</bugs>
+	<repository type="git">https://framagit.org/framasoft/nextcloud/drop_account.git</repository>
+	<dependencies>
+		<nextcloud min-version="22" max-version="24" />
+	</dependencies>
+	<background-jobs>
+		<job>OCA\DropAccount\BackgroundJob\TimedDeleteAccountData</job>
+	</background-jobs>
+	<settings>
+		<admin>OCA\DropAccount\Settings\Admin</admin>
+		<personal>OCA\DropAccount\Settings\Personal</personal>
+		<personal-section>OCA\DropAccount\Settings\PersonalSection</personal-section>
+	</settings>
+	<activity>
+		<settings>
+			<setting>OCA\DropAccount\Activity\Setting</setting>
+		</settings>
+		<providers>
+			<provider>OCA\DropAccount\Activity\Provider</provider>
+		</providers>
+	</activity>
+</info>

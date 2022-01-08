@@ -1,0 +1,9 @@
+{ "translations": {
+    "Saved" : "შენახულია",
+    "Register" : "რეგისტრაცია",
+    "Email" : "ელ-ფოსტა",
+    "Password" : "პაროლი",
+    "Create account" : "ანგარიშის შექმნა",
+    "Verify" : "დამოწმება"
+},"pluralForm" :"nplurals=2; plural=(n!=1);"
+}

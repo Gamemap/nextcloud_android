@@ -1,0 +1,44 @@
+2022-01-07T16:21:25+0100 AK4GtxznP7 [info] request to updater
+2022-01-07T16:21:25+0100 AK4GtxznP7 [info] currentStep()
+2022-01-07T16:21:25+0100 AK4GtxznP7 [info] show HTML page
+2022-01-07T16:21:25+0100 AK4GtxznP7 [info] current version: 23.0.0 build time: 2021-11-26T20:54:42+00:00 0619207f13792250aea775a2c3133d41ab625980
+2022-01-07T16:21:25+0100 AK4GtxznP7 [info] getUpdateServerResponse()
+2022-01-07T16:21:25+0100 AK4GtxznP7 [info] updaterServer: https://updates.nextcloud.com/updater_server/
+2022-01-07T16:21:25+0100 AK4GtxznP7 [info] releaseChannel: beta
+2022-01-07T16:21:25+0100 AK4GtxznP7 [info] internal version: 23.0.0.10
+2022-01-07T16:21:25+0100 AK4GtxznP7 [info] updateURL: https://updates.nextcloud.com/updater_server/?version=23x0x0x10xxxbetaxx2021-11-26T20%3A54%3A42%2B00%3A00+0619207f13792250aea775a2c3133d41ab625980x7x4x27
+2022-01-07T16:21:25+0100 AK4GtxznP7 [info] getUpdateServerResponse response: Array
+(
+    [version] => 23.0.1.0
+    [versionstring] => Nextcloud 23.0.1 RC1
+    [url] => https://download.nextcloud.com/server/prereleases/nextcloud-23.0.1rc1.zip
+    [web] => https://docs.nextcloud.com/server/23/admin_manual/maintenance/upgrade.html
+    [changes] => https://updates.nextcloud.com/changelog_server/?version=23.0.1
+    [autoupdater] => 1
+    [eol] => 0
+    [signature] => HpNNE5HikcAZ/6O+zg8oRZdrm7OJrghiWrVhdLdHWwXvK7TzjxgH9oLOUoQION12
+zUNepuz0smxCbH+wRS+OI6gPOtm1sgajaX/hn05ATksf3l/KIav80RQchk5vPl3Y
+Xw91z4YP5CmhsfwzaoiRRGzLRDDRugsOQhgTehYADBw1EMKqKsSUv/ZaJ0bS7ATb
+abKEgJamOy+TOCm4GbH8d6qOxTZPozP7NwcYNyL0rKW2F1TozRTZTwwGK/g0phSM
+kSP2lKEmIafNZhmCuWtde7JLVSxdeJfH8pz/dR7QiPZpG+sxpEgXneYzDmkTbmGx
+EdJ5ph6eOqkJytWuboLGAg==
+)
+
+2022-01-07T16:21:25+0100 AK4GtxznP7 [info] checkForUpdate() Array
+(
+    [version] => 23.0.1.0
+    [versionstring] => Nextcloud 23.0.1 RC1
+    [url] => https://download.nextcloud.com/server/prereleases/nextcloud-23.0.1rc1.zip
+    [web] => https://docs.nextcloud.com/server/23/admin_manual/maintenance/upgrade.html
+    [changes] => https://updates.nextcloud.com/changelog_server/?version=23.0.1
+    [autoupdater] => 1
+    [eol] => 0
+    [signature] => HpNNE5HikcAZ/6O+zg8oRZdrm7OJrghiWrVhdLdHWwXvK7TzjxgH9oLOUoQION12
+zUNepuz0smxCbH+wRS+OI6gPOtm1sgajaX/hn05ATksf3l/KIav80RQchk5vPl3Y
+Xw91z4YP5CmhsfwzaoiRRGzLRDDRugsOQhgTehYADBw1EMKqKsSUv/ZaJ0bS7ATb
+abKEgJamOy+TOCm4GbH8d6qOxTZPozP7NwcYNyL0rKW2F1TozRTZTwwGK/g0phSM
+kSP2lKEmIafNZhmCuWtde7JLVSxdeJfH8pz/dR7QiPZpG+sxpEgXneYzDmkTbmGx
+EdJ5ph6eOqkJytWuboLGAg==
+)
+
+2022-01-07T16:21:25+0100 AK4GtxznP7 [info] end of checkForUpdate() Update to Nextcloud 23.0.1 RC1 available. (channel: "beta")<br /><span class="light">Following file will be downloaded automatically:</span> <code class="light">https://download.nextcloud.com/server/prereleases/nextcloud-23.0.1rc1.zip</code>
